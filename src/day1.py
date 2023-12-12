@@ -10,6 +10,7 @@ def convertString(line):
     line = line.replace("nine", "n9ine")
     return line
 
+
 def part1(filename):
     file = open(filename, 'r')
     calibrationStrings = file.readlines()
@@ -29,6 +30,7 @@ def part1(filename):
         calibrationSum += value1 * 10 + value2
     file.close
     return calibrationSum
+
 
 def part2(filename):
     file = open(filename, 'r')
